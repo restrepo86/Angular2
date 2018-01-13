@@ -9,14 +9,16 @@ import { AppComponent } from './app.component';
 import { MathComponent } from './games/math/math.component';
 import { AboutComponent } from './games/about/about.component';
 import { FormatPipe } from './pipes/format.pipe';
-import { GameService } from  './services/games.service'
+import { GameService } from  './services/games.service';
+import { AttrDirective } from './directives/attr.directive'
 
 @NgModule({
   declarations: [
     AppComponent,
     MathComponent,
     AboutComponent,
-    FormatPipe
+    FormatPipe,
+    AttrDirective
   ],
   imports: [
     BrowserModule,

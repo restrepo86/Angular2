@@ -1,0 +1,13 @@
+
+<form>
+  <p>
+    Time: {{time}}
+  </p>
+  <p>
+    {{question}} =
+    <input name = "intro" [(ngModel)] = "intro" size="2" /> {{answers | formatUpperCase}}
+  </p>
+  <p>
+    <button (click)="resetGame()" [disabled]="time != 0">Reset</button>
+  </p>
+</form>
